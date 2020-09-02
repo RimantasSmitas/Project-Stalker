@@ -220,7 +220,7 @@ while True:
 			# centroid and the mean of *previous* centroids will tell
 			# us in which direction the object is moving (negative for
 			# 'up' and positive for 'down')
-			y = [c[1] for c in to.centroids]
+			x = [c[1] for c in to.centroids]
 			direction = centroid[1] - np.mean(y)
 			to.centroids.append(centroid)
 
