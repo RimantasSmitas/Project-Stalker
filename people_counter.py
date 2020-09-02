@@ -22,7 +22,7 @@ import dlib
 import cv2
 import sys
 
-sys.path.append('/usr/local/lib/python3.7/dist-packages')
+sys.path.append('/usr/local/lib/python3.7/site-packages')
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
