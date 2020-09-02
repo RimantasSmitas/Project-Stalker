@@ -22,7 +22,7 @@ import dlib
 import cv2
 import sys
 
-sys.path.append('/usr/local/lib/python3.7/dist-packages')
+sys.path.append('/usr/local/lib/python3.7/site-packages')
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
@@ -195,7 +195,7 @@ while True:
 	# draw a horizontal line in the center of the frame -- once an
 	# object crosses this line we will determine whether they were
 	# moving 'up' or 'down'
-	cv2.line(frame, (W // 2, 0), (W // 2, H), (0, 255, 255), 2)
+	cv2.line(frame, (0, H // 2), (W, H // 2), (0, 255, 255), 2)
 
 	# use the centroid tracker to associate the (1) old object
 	# centroids with (2) the newly computed object centroids
@@ -284,8 +284,9 @@ while True:
 fps.stop()
 print("[INFO] elapsed time: {:.2f}".format(fps.elapsed()))
 print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
-print("Total up", totalUp)
-print("Total down", totalDown)
+print("TotalUp", totalUp)
+print("TotalDown", totalDown)
+
 # check to see if we need to release the video writer pointer
 if writer is not None:
 	writer.release()
