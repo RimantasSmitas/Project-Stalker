@@ -85,7 +85,7 @@ totalDown = 0
 totalUp = 0
 
 # start the frames per second throughput estimator
-fps = FPS().start()
+#fps = FPS().start()
 
 
 # loop over frames from the video stream
@@ -281,9 +281,9 @@ while True:
 	fps.update()
 
 # stop the timer and display FPS information
-fps.stop()
+#fps.stop()
 print("[INFO] elapsed time: {:.2f}".format(fps.elapsed()))
-print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
+#print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
 print("TotalUp", totalUp)
 print("TotalDown", totalDown)
 
