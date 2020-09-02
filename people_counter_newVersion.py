@@ -229,14 +229,14 @@ while True:
 				# if the direction is negative (indicating the object
 				# is moving up) AND the centroid is above the center
 				# line, count the object
-				if direction < 0 and centroid[1] < H // 2:
+				if direction < 0 and centroid[1] < W // 2:
 					totalUp += 1
 					to.counted = True
 
 				# if the direction is positive (indicating the object
 				# is moving down) AND the centroid is below the
 				# center line, count the object
-				elif direction > 0 and centroid[1] > H // 2:
+				elif direction > 0 and centroid[1] > W // 2:
 					totalDown += 1
 					to.counted = True
 
