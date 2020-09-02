@@ -282,7 +282,7 @@ while True:
 
 # stop the timer and display FPS information
 #fps.stop()
-print("[INFO] elapsed time: {:.2f}".format(fps.elapsed()))
+#print("[INFO] elapsed time: {:.2f}".format(fps.elapsed()))
 #print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
 print("TotalUp", totalUp)
 print("TotalDown", totalDown)
