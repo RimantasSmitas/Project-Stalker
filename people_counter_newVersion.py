@@ -221,7 +221,7 @@ while True:
 			# us in which direction the object is moving (negative for
 			# 'up' and positive for 'down')
 			x = [c[1] for c in to.centroids]
-			direction = centroid[1] - np.mean(y)
+			direction = centroid[1] - np.mean(x)
 			to.centroids.append(centroid)
 
 			# check to see if the object has been counted or not
