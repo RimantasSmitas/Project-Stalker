@@ -270,7 +270,7 @@ while True:
 		writer.write(frame)
 	# show the output frame
 #This line under is commented out uncomment if you want to see the frame beeing analised
-	cv2.imshow("Frame", frame)
+	#cv2.imshow("Frame", frame)
 	key = cv2.waitKey(1) & 0xFF
 
 	# if the `q` key was pressed, break from the loop
