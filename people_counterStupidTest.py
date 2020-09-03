@@ -22,7 +22,7 @@ import dlib
 import cv2
 import sys
 
-sys.path.append('/usr/local/lib/python3.7/dist-packages')
+sys.path.append('/usr/local/lib/python3.7/site-packages')
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
@@ -182,12 +182,12 @@ while True:
 			# update the tracker and grab the updated position
 			tracker.update(rgb)
 			pos = tracker.get_position()
-
+#Reversed the x and y's for a dumn test
 			# unpack the position object
-			startX = int(pos.left())
-			startY = int(pos.top())
-			endX = int(pos.right())
-			endY = int(pos.bottom())
+			startY = int(pos.left())
+			startX = int(pos.top())
+			endY = int(pos.right())
+			endX = int(pos.bottom())
 
 			# add the bounding box coordinates to the rectangles list
 			rects.append((startX, startY, endX, endY))
@@ -195,13 +195,10 @@ while True:
 	# draw a horizontal line in the center of the frame -- once an
 	# object crosses this line we will determine whether they were
 	# moving 'up' or 'down'
-
-	# changed the line coordinates to a vertical line
-	cv2.line(frame, (W // 2, 0), (W // 2, H), (0, 255, 255), 2)
+	cv2.line(frame, (0, H // 2), (W, H // 2), (0, 255, 255), 2)
 
 	# use the centroid tracker to associate the (1) old object
 	# centroids with (2) the newly computed object centroids
-
 	objects = ct.update(rects)
 
 	# loop over the tracked objects
@@ -221,8 +218,8 @@ while True:
 			# centroid and the mean of *previous* centroids will tell
 			# us in which direction the object is moving (negative for
 			# 'up' and positive for 'down')
-			x = [c[1] for c in to.centroids]
-			direction = centroid[1] - np.mean(x)
+			y = [c[1] for c in to.centroids]
+			direction = centroid[1] - np.mean(y)
 			to.centroids.append(centroid)
 
 			# check to see if the object has been counted or not
@@ -230,14 +227,14 @@ while True:
 				# if the direction is negative (indicating the object
 				# is moving up) AND the centroid is above the center
 				# line, count the object
-				if direction < 0 and centroid[1] < W // 2:
+				if direction < 0 and centroid[1] < H // 2:
 					totalUp += 1
 					to.counted = True
 
 				# if the direction is positive (indicating the object
 				# is moving down) AND the centroid is below the
 				# center line, count the object
-				elif direction > 0 and centroid[1] > W // 2:
+				elif direction > 0 and centroid[1] > H // 2:
 					totalDown += 1
 					to.counted = True
 
@@ -287,8 +284,7 @@ while True:
 fps.stop()
 print("[INFO] elapsed time: {:.2f}".format(fps.elapsed()))
 print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
-print("Total up", totalUp)
-print("Total down", totalDown)
+
 # check to see if we need to release the video writer pointer
 if writer is not None:
 	writer.release()
