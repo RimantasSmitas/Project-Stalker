@@ -220,8 +220,8 @@ while True:
 			# centroid and the mean of *previous* centroids will tell
 			# us in which direction the object is moving (negative for
 			# 'up' and positive for 'down')
-			x = [c[0] for c in to.centroids]
-			direction = centroid[0] - np.mean(x)
+			x = [c[2] for c in to.centroids]
+			direction = centroid[2] - np.mean(x)
 			to.centroids.append(centroid)
 
 			# check to see if the object has been counted or not
@@ -229,14 +229,14 @@ while True:
 				# if the direction is negative (indicating the object
 				# is moving up) AND the centroid is above the center
 				# line, count the object
-				if direction < 0 and centroid[1] < W // 2:
+				if direction < 0 and centroid[2] < W // 2:
 					totalUp += 1
 					to.counted = True
 
 				# if the direction is positive (indicating the object
 				# is moving down) AND the centroid is below the
 				# center line, count the object
-				elif direction > 0 and centroid[1] > W // 2:
+				elif direction > 0 and centroid[2] > W // 2:
 					totalDown += 1
 					to.counted = True
 
