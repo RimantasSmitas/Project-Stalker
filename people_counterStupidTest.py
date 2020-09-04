@@ -81,8 +81,8 @@ trackableObjects = {}
 # initialize the total number of frames processed thus far, along
 # with the total number of objects that have moved either up or down
 totalFrames = 0
-totalDown = 0
-totalUp = 0
+totalRight = 0
+totalLeft = 0
 
 # start the frames per second throughput estimator
 fps = FPS().start()
@@ -228,14 +228,14 @@ while True:
 				# is moving up) AND the centroid is above the center
 				# line, count the object
 				if direction < 0 and centroid[1] < W // 2:
-					totalUp += 1
+					totalLeft += 1
 					to.counted = True
 
 				# if the direction is positive (indicating the object
 				# is moving down) AND the centroid is below the
 				# center line, count the object
 				elif direction > 0 and centroid[1] > W // 2:
-					totalDown += 1
+					totalRight += 1
 					to.counted = True
 
 		# store the trackable object in our dictionary
@@ -252,8 +252,8 @@ while True:
 	# frame
 
 	info = [
-		("Up", totalUp),
-		("Down", totalDown),
+		("Up", totalLeft),
+		("Down", totalRight),
 		("Status", status),
 	]
 
