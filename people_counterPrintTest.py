@@ -85,7 +85,7 @@ totalDown = 0
 totalUp = 0
 
 # start the frames per second throughput estimator
-#fps = FPS().start()
+fps = FPS().start()
 
 
 # loop over frames from the video stream
@@ -278,7 +278,7 @@ while True:
 	# increment the total number of frames processed thus far and
 	# then update the FPS counter
 	totalFrames += 1
-#	fps.update()
+	fps.update()
 
 # stop the timer and display FPS information
 fps.stop()
