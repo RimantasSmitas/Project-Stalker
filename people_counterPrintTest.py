@@ -268,7 +268,7 @@ while True:
 		writer.write(frame)
 	# show the output frame
 #This line under is commented out uncomment if you want to see the frame beeing analised
-	#cv2.imshow("Frame", frame)
+	cv2.imshow("Frame", frame)
 	key = cv2.waitKey(1) & 0xFF
 
 	# if the `q` key was pressed, break from the loop
@@ -281,9 +281,9 @@ while True:
 #	fps.update()
 
 # stop the timer and display FPS information
-#fps.stop()
-#print("[INFO] elapsed time: {:.2f}".format(fps.elapsed()))
-#print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
+fps.stop()
+print("[INFO] elapsed time: {:.2f}".format(fps.elapsed()))
+print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
 print("TotalUp", totalUp)
 print("TotalDown", totalDown)
 
