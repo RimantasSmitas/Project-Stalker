@@ -252,8 +252,8 @@ while True:
 	# frame
 
 	info = [
-		("Up", totalLeft),
-		("Down", totalRight),
+		("Left", totalLeft),
+		("Right", totalRight),
 		("Status", status),
 	]
 
