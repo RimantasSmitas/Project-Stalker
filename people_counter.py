@@ -103,7 +103,8 @@ while True:
 	# resize the frame to have a maximum width of 500 pixels (the
 	# less data we have, the faster we can process it), then convert
 	# the frame from BGR to RGB for dlib
-	frame = imutils.resize(frame, width=500)
+	#Chaged width from 500 to 750 to increase viewing distance
+	frame = imutils.resize(frame, width=750)
 	rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
 	# if the frame dimensions are empty, set them
@@ -150,7 +151,7 @@ while True:
 				idx = int(detections[0, 0, i, 1])
 
 				# if the class label is not a person, ignore it
-				if (CLASSES[idx] != "person" or CLASSES[idx] != "bicycle"):
+				if CLASSES[idx] != "person" or CLASSES[idx] != "bicycle":
 					continue
 
 				# compute the (x, y)-coordinates of the bounding box
