@@ -1,6 +1,8 @@
+#include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <wiringPi.h>
 
 int main()
 {
@@ -48,5 +50,7 @@ int main()
 	remove("dataFile.txt");
 	rename(temp,"dataFile.txt");
 	printf("Removed the first line\n");
+	sleep(5);
+	printf("Sleep test\n");
 	return 0;
 }
