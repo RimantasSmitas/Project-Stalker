@@ -1,0 +1,5 @@
+
+2
+## the format in the file will as follows theres going a setting per line
+### first line contains coordinates of the counting line if the line is empty the code should default to middle line
+### second line frame rate and resolution setting a number from 1 to 3
