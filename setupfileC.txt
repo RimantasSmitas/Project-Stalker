@@ -4,5 +4,5 @@
 ## the format in the file will as follows theres going a setting per line
 ### first line DEV EUI  should be lsb
 ### second line APP EUI should be lsb
-### third line APP KEY  should be msb
+### third line APP KEY  should be msbf
 ### For the python side of the software we need to read just the first two lines the rest are for C code
