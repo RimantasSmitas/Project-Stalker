@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa7214a0-89b3-4185-8def-6d6eefe5e6f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/DataReader.c" beforeDir="false" afterPath="$PROJECT_DIR$/DataReader.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="2877ed75-7308-4491-8220-c4b18b3d9f78" />
+  <component name="ProjectId" id="1iBqs3e6Oh7FuV39io0Jbw5catX" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa7214a0-89b3-4185-8def-6d6eefe5e6f3" name="Default Changelist" comment="" />
+      <created>1601391536151</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601391536151</updated>
+      <workItem from="1601391538381" duration="1736000" />
+      <workItem from="1601453728524" duration="1235000" />
+      <workItem from="1601637483056" duration="10677000" />
+      <workItem from="1601887053067" duration="5776000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added files to contain setup parameters">
+      <created>1601648949833</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601648949833</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added files to contain setup parameters">
+      <created>1601651834407</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601651834407</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Made a reading function">
+      <created>1601897915697</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601897915697</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Made a reading function">
+      <created>1601898052230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601898052230</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Rearrange">
+      <created>1601898113642</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601898113643</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Rearrange">
+      <created>1601898151960</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601898151960</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Rearrange">
+      <created>1601898572735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601898572735</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Rearrange">
+      <created>1601898750899</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601898750899</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Rearrange">
+      <created>1601899358777</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601899358777</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Rearrange">
+      <created>1601899769461</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601899769461</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added files to contain setup parameters" />
+    <MESSAGE value="Made a reading function" />
+    <MESSAGE value="Rearrange" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rearrange" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1601901065535">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601901065535" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1601897888040">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601897888040" />
+    <state x="853" y="281" key="MultipleFileMergeDialog" timestamp="1601651850184">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="853" y="281" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601651850184" />
+    <state x="1227" y="239" key="VCS.ChangeListViewerDialog" timestamp="1601897523020">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1227" y="239" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601897523020" />
+    <state x="530" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601900727398">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="530" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601900727398" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601897587151">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601897587151" />
+    <state x="43" y="0" width="1893" height="1027" key="dock-window-1" timestamp="1601643791259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="43" y="0" width="1893" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1601643791259" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-2" timestamp="1601887517072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="953" y="0" width="974" height="1047" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1601887517072" />
+  </component>
+</project>
