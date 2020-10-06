@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7214a0-89b3-4185-8def-6d6eefe5e6f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataReader.c" beforeDir="false" afterPath="$PROJECT_DIR$/DataReader.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,28 +40,7 @@
       <workItem from="1601887053067" duration="5776000" />
       <workItem from="1601905350920" duration="3038000" />
       <workItem from="1601972158861" duration="2135000" />
-      <workItem from="1601975353061" duration="6347000" />
-    </task>
-    <task id="LOCAL-00001" summary="Added files to contain setup parameters">
-      <created>1601648949833</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1601648949833</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added files to contain setup parameters">
-      <created>1601651834407</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1601651834407</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Made a reading function">
-      <created>1601897915697</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1601897915697</updated>
+      <workItem from="1601975353061" duration="6702000" />
     </task>
     <task id="LOCAL-00004" summary="Made a reading function">
       <created>1601898052230</created>
@@ -379,7 +357,35 @@
       <option name="project" value="LOCAL" />
       <updated>1601986849462</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Rearrange">
+      <created>1601987552842</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1601987552842</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Rearrange">
+      <created>1601987656091</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1601987656092</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Rearrange">
+      <created>1601987706583</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1601987706583</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Rearrange">
+      <created>1601987788847</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1601987788847</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,10 +402,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601975299123" />
-    <state x="585" y="81" width="749" height="959" key="CommitChangelistDialog2" timestamp="1601986849028">
+    <state x="585" y="81" width="749" height="959" key="CommitChangelistDialog2" timestamp="1601987814743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="81" width="749" height="959" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601986849028" />
+    <state x="585" y="81" width="749" height="959" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601987814743" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1601897888040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -412,10 +418,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1227" y="239" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601897523020" />
-    <state x="530" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601986851049">
+    <state x="530" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601987790207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="530" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601986851049" />
+    <state x="530" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601987790207" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601897587151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
