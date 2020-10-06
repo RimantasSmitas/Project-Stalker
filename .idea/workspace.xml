@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa7214a0-89b3-4185-8def-6d6eefe5e6f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataReader.c" beforeDir="false" afterPath="$PROJECT_DIR$/DataReader.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +39,8 @@
       <workItem from="1601453728524" duration="1235000" />
       <workItem from="1601637483056" duration="10677000" />
       <workItem from="1601887053067" duration="5776000" />
-      <workItem from="1601905350920" duration="2349000" />
+      <workItem from="1601905350920" duration="3038000" />
+      <workItem from="1601972158861" duration="953000" />
     </task>
     <task id="LOCAL-00001" summary="Added files to contain setup parameters">
       <created>1601648949833</created>
@@ -138,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601907490867</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Rearrange">
+      <created>1601907973732</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1601907973732</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,10 +160,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Rearrange" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1601907490401">
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1601907973304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601907490401" />
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601907973304" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1601897888040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -167,18 +176,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1227" y="239" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601897523020" />
-    <state x="530" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601907492282">
+    <state x="530" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601907975358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="530" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601907492282" />
+    <state x="530" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601907975358" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601897587151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601897587151" />
-    <state x="43" y="0" width="1893" height="1027" key="dock-window-1" timestamp="1601643791259">
+    <state x="584" y="252" width="1352" height="875" key="dock-window-1" timestamp="1601973571187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="43" y="0" width="1893" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1601643791259" />
+    <state x="584" y="252" width="1352" height="875" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1601973571187" />
     <state x="953" y="0" width="974" height="1047" key="dock-window-2" timestamp="1601887517072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
