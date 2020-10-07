@@ -24,6 +24,14 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+ 
+ 
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <wiringPi.h>
+#include <stdint.h>
 
 #include "lmic.h"
 #include "debug.h"
@@ -41,7 +49,7 @@ static const u1_t DEVEUI[8]  = { 0x5D, 0x4B, 0x65, 0xE3, 0x8B, 0x31, 0xCB, 0x00 
 // device-specific AES key (derived from device EUI)
 static const u1_t DEVKEY[16] = { 0x89, 0xCA, 0x26, 0x18, 0xDB, 0x51, 0xE4, 0x3B, 0xA0, 0x56, 0x5B, 0xE4, 0xCE, 0x96, 0xB7, 0x15 };
 
-static char mydata[32] = "Data!";
+static char mydata[32];
 static osjob_t sendjob;
 
 //////////////////////////////////////////////////
@@ -94,6 +102,56 @@ int main () {
     return 0;
 }
 
+void getData(){
+	FILE *fptr1, *fptr2;
+	int linectr = 1;
+
+	char str[256];
+	char temp[]="temp.txt";
+	fptr1 = fopen("dataFile.txt","r+");
+
+	if(!fptr1)
+	{
+		printf("Unable to open data file!!\n");
+		return 0;
+	}
+
+	fptr2 = fopen(temp,"w");
+	if (!fptr2)
+	{
+		printf("Unable to open a temporary file to write!!");
+		fclose(fptr1);
+		return 0;
+	}
+
+	if( fgets (mydata, 60, fptr1)!=NULL )
+	{
+		//printf("Reading data from data file\n");
+		//puts(data);
+	}
+
+	while (!feof(fptr1))
+	{
+		strcpy(str, "\0");
+		fgets(str, 256, fptr1);
+		if (!feof(fptr1))
+		{
+			linectr++;
+			fprintf(fptr2, "%s", str);
+		}
+	}
+	fclose(fptr1);
+	fclose(fptr2);
+	remove("dataFile.txt");
+	rename(temp,"dataFile.txt");
+	//printf("Removed the first line\n");
+	//sleep(5);
+	//printf("Sleep test\n");
+	return 0;	
+}
+
+
+
 
 //////////////////////////////////////////////////
 // UTILITY JOB
@@ -115,11 +173,11 @@ void do_send(osjob_t* j){
     if (LMIC.opmode & OP_TXRXPEND) {
         debug_str("OP_TXRXPEND, not sending\r\n");
     } else {
+		getData();
         // Prepare upstream data transmission at the next possible time.
         LMIC_setTxData2(1, mydata, sizeof(mydata)-1, 0);
         debug_str("Packet queued\r\n");
     }
-
     os_setTimedCallback(j, os_getTime()+sec2osticks(10), do_send);
 }
 
@@ -131,7 +189,6 @@ void onEvent (ev_t ev) {
     debug_event(ev);
 
     switch(ev) {
-
       // starting to join network
       case EV_JOINING:
           // start blinking
