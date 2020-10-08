@@ -25,16 +25,14 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
  
- 
+#include "lmic.h"
+#include "debug.h"
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <wiringPi.h>
 #include <stdint.h>
-
-#include "lmic.h"
-#include "debug.h"
 
 //////////////////////////////////////////////////
 // CONFIGURATION (FOR APPLICATION CALLBACKS BELOW)
@@ -113,7 +111,7 @@ void getData(){
 	if(!fptr1)
 	{
 		printf("Unable to open data file!!\n");
-		return 0;
+		return ;
 	}
 
 	fptr2 = fopen(temp,"w");
@@ -121,7 +119,7 @@ void getData(){
 	{
 		printf("Unable to open a temporary file to write!!");
 		fclose(fptr1);
-		return 0;
+		return ;
 	}
 
 	if( fgets (mydata, 60, fptr1)!=NULL )
@@ -147,7 +145,7 @@ void getData(){
 	//printf("Removed the first line\n");
 	//sleep(5);
 	//printf("Sleep test\n");
-	return 0;	
+	return ;
 }
 
 
