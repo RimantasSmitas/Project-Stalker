@@ -49,7 +49,7 @@ static const u1_t DEVEUI[8]  = { 0x5D, 0x4B, 0x65, 0xE3, 0x8B, 0x31, 0xCB, 0x00 
 // device-specific AES key (derived from device EUI)
 static const u1_t DEVKEY[16] = { 0x89, 0xCA, 0x26, 0x18, 0xDB, 0x51, 0xE4, 0x3B, 0xA0, 0x56, 0x5B, 0xE4, 0xCE, 0x96, 0xB7, 0x15 };
 
-static char mydata[32];
+static char mydata[32] = "05 10 10 2012 08 12 10 12";
 static osjob_t sendjob;
 
 //////////////////////////////////////////////////
@@ -173,7 +173,7 @@ void do_send(osjob_t* j){
     if (LMIC.opmode & OP_TXRXPEND) {
         debug_str("OP_TXRXPEND, not sending\r\n");
     } else {
-		getData();
+		//getData();
         // Prepare upstream data transmission at the next possible time.
         LMIC_setTxData2(1, mydata, sizeof(mydata)-1, 0);
         debug_str("Packet queued\r\n");
