@@ -1,0 +1,8 @@
+Access key(default key)   ttn-account-v2.99Tosg-xt8TQa3xhdCxasfkCDJdW1L6GGEHe7lro0BE
+Application EUI 		  70B3D57ED00346DE
+Device EUI 				  00CB318BE3654B5D
+Application EUI 		  70B3D57ED00346DE
+App Key 				  89CA2618DB51E43BA0565BE4CE96B715
+Device Address 			  26016CBB
+Network session key 	  61EAF69F7F49341B788F310FB6EED5B0
+App session key			  67EB6E3C1FB8F5B1747B2994ABEB0E0D
