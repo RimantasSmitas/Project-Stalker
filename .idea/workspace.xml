@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa7214a0-89b3-4185-8def-6d6eefe5e6f3" name="Default Changelist" comment="Rearrange">
+    <list default="true" id="aa7214a0-89b3-4185-8def-6d6eefe5e6f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/dataReader.c" beforeDir="false" afterPath="$PROJECT_DIR$/dataReader.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,21 +44,7 @@
       <workItem from="1601905350920" duration="3038000" />
       <workItem from="1601972158861" duration="2135000" />
       <workItem from="1601975353061" duration="12733000" />
-      <workItem from="1602515136517" duration="2575000" />
-    </task>
-    <task id="LOCAL-00053" summary="Rearrange">
-      <created>1601987907100</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1601987907100</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Rearrange">
-      <created>1601988157852</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1601988157852</updated>
+      <workItem from="1602515136517" duration="2892000" />
     </task>
     <task id="LOCAL-00055" summary="Rearrange">
       <created>1601988284938</created>
@@ -389,7 +375,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602517380643</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Rearrange">
+      <created>1602517761693</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1602517761693</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Rearrange">
+      <created>1602517962063</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1602517962063</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,10 +406,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601975299123" />
-    <state x="585" y="81" width="749" height="959" key="CommitChangelistDialog2" timestamp="1602517400667">
+    <state x="585" y="81" width="749" height="959" key="CommitChangelistDialog2" timestamp="1602517961537">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="81" width="749" height="959" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602517400667" />
+    <state x="585" y="81" width="749" height="959" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602517961537" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1602149460614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -422,10 +422,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1227" y="239" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601897523020" />
-    <state x="530" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602517403517">
+    <state x="530" y="252" key="Vcs.Push.Dialog.v2" timestamp="1602517965236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="530" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602517403517" />
+    <state x="530" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602517965236" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601897587151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
