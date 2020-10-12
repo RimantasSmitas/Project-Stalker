@@ -86,8 +86,9 @@ static void initfunc (osjob_t* j) {
 
 // application entry point
 int main () {
-    osjob_t initjob;
+
     printf("s%",DEVEUI);
+    osjob_t initjob;
     // initialize runtime env
     os_init();
     // initialize debug library
