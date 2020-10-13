@@ -61,7 +61,7 @@ void os_getArtEui (u1_t* buf) {
 
 // provide device ID (8 bytes, LSBF)
 void os_getDevEui (u1_t* buf) {
-    printf("DevEUI is s%",DEVEUI);
+    printf("DevEUI is d%",DEVEUI);
     memcpy(buf, DEVEUI, 8);
 }
 
@@ -79,7 +79,7 @@ void os_getDevKey (u1_t* buf) {
 static void initfunc (osjob_t* j) {
     // reset MAC state
     LMIC_reset();
-    printf("DevEUI is s%",DEVEUI);
+    printf("DevEUI is d%",DEVEUI);
     // start joining
     LMIC_startJoining();
     // init done - onEvent() callback will be invoked...
