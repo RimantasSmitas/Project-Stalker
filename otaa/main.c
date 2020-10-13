@@ -99,50 +99,50 @@ int counter;
     switch(count)
     {
         case 0:
-            printf("line %s\n",setting);
+         //   printf("line %s\n",setting);
             counter = 0;
             for (int i = 0;i<16;i=i+2)
             {
-                printf("%c +",setting[i]);
-                printf(" %c =",setting[i+1]);
+           //     printf("%c +",setting[i]);
+           //     printf(" %c =",setting[i+1]);
                 long int val = getVal(setting[i])<<4 | getVal(setting[i+1]);
-                printf("%d\n",val);
+           //     printf("%d\n",val);
                 DEVEUI[7-counter]=val;
                 counter++;
             }
-            printf("DEVEUI %d\n",DEVEUI);
+          //  printf("DEVEUI %d\n",DEVEUI);
 
             return;
 
         case 1:
-            printf("line %s\n",setting);
+          //  printf("line %s\n",setting);
             counter = 0;
             for (int i = 0;i<16;i=i+2)
             {
-                printf("%c +",setting[i]);
-                printf(" %c =",setting[i+1]);
+            //    printf("%c +",setting[i]);
+              //  printf(" %c =",setting[i+1]);
                 long int val = getVal(setting[i])<<4 | getVal(setting[i+1]);
-                printf("%d\n",val);
+               // printf("%d\n",val);
                 APPEUI[7-counter]=val;
                 counter++;
             }
-            printf("APPEUI %d\n",APPEUI);
+            //printf("APPEUI %d\n",APPEUI);
 return;
 
         case 2:
-            printf("line %s\n",setting);
+            //printf("line %s\n",setting);
             counter = 0;
             for (int i = 0;i<32;i=i+2)
             {
-                printf("%c +",setting[i]);
-                printf(" %c =",setting[i+1]);
+               // printf("%c +",setting[i]);
+               // printf(" %c =",setting[i+1]);
                 long int val = getVal(setting[i])<<4 | getVal(setting[i+1]);
-                printf("%d\n",val);
+               // printf("%d\n",val);
                 DEVKEY[counter]=val;
                 counter++;
             }
-            printf("APPKEY %d\n",DEVKEY);
-            printf("line %s\n", setting);
+            //printf("APPKEY %d\n",DEVKEY);
+            //printf("line %s\n", setting);
             return;
     }
 }
@@ -157,7 +157,7 @@ void settingReader()
 	char line[256];
 	while (fgets(line, sizeof line, fptr3) != NULL) /* read a line */
 	{
-	printf("line test %s\n",line);
+	//printf("line test %s\n",line);
 		switch(count)
 		{
 			case 0:
