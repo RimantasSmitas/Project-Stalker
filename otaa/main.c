@@ -78,6 +78,7 @@ void os_getDevKey (u1_t* buf) {
 static void initfunc (osjob_t* j) {
     // reset MAC state
     LMIC_reset();
+    printf("s%",DEVEUI);
     // start joining
     LMIC_startJoining();
     // init done - onEvent() callback will be invoked...
@@ -87,7 +88,7 @@ static void initfunc (osjob_t* j) {
 // application entry point
 int main () {
 
-    printf("s%",DEVEUI);
+
     osjob_t initjob;
     // initialize runtime env
     os_init();
