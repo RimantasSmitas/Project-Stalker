@@ -203,7 +203,7 @@ static void initfunc (osjob_t* j) {
 
 // application entry point
 int main () {
-
+    printf("print");
 
     osjob_t initjob;
     // initialize runtime env
