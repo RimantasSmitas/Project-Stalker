@@ -68,7 +68,7 @@ static s4_t sleep_interval_ms = 0;
 
 void hal_init () {
    hal_time_init();
-    fprintf("test");
+    printf("test");
 #ifdef DEBUG_HAL
    fprintf(stdout, "%09d HAL: Initializing ...\n", osticks2ms(hal_ticks()));
 #endif
