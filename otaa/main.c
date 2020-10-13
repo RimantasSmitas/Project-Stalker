@@ -141,7 +141,7 @@ return;
                 DEVKEY[counter]=val;
                 counter++;
             }
-            printf("APPKEY %d\n",APPKEY);
+            printf("APPKEY %d\n",DEVKEY);
             printf("line %s\n", setting);
             return;
     }
