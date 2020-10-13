@@ -41,13 +41,13 @@
 // application router ID (LSBF)
 //static const u1_t APPEUI[8]  = { 0xDE, 0x46, 0x03, 0xD0, 0x7E, 0xD5, 0xB3, 0x70 };
 
-u1_t APPEUI[8];
+static u1_t APPEUI[8];
 // unique device ID (LSBF)
 //static const u1_t DEVEUI[8]  = { 0x5D, 0x4B, 0x65, 0xE3, 0x8B, 0x31, 0xCB, 0x00 };
-u1_t DEVEUI[8];
+static u1_t DEVEUI[8];
 // device-specific AES key (derived from device EUI)
 //static const u1_t DEVKEY[16] = { 0x89, 0xCA, 0x26, 0x18, 0xDB, 0x51, 0xE4, 0x3B, 0xA0, 0x56, 0x5B, 0xE4, 0xCE, 0x96, 0xB7, 0x15 };
-u1_t DEVKEY[16];
+static u1_t DEVKEY[16];
 static char mydata[32] = "05 10 10 2012 08 12 10 12";
 static osjob_t sendjob;
 
@@ -62,7 +62,7 @@ void os_getArtEui (u1_t* buf) {
 
 // provide device ID (8 bytes, LSBF)
 void os_getDevEui (u1_t* buf) {
-    printf("DevEUI is d%",DEVEUI);
+   // printf("DevEUI is d%",DEVEUI);
     memcpy(buf, DEVEUI, 8);
 }
 
@@ -151,7 +151,7 @@ return;
 void settingReader()
 {
 	FILE *fptr3;
-	fptr3 = fopen("setupfileC.txt","r");
+	fptr3 = fopen("~/projectStalker/setupfileC.txt","r");
 
 	int count=0;
 	char line[256];
