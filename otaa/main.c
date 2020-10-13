@@ -191,6 +191,7 @@ void settingReader()
 
 // initial job
 static void initfunc (osjob_t* j) {
+    printf("printb");
     settingReader();
     // reset MAC state
     LMIC_reset();
@@ -265,8 +266,6 @@ void getData(){
 	//printf("Sleep test\n");
 	return ;
 }
-
-
 
 
 //////////////////////////////////////////////////
