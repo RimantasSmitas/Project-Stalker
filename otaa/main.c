@@ -150,6 +150,7 @@ return;
 //function that reads a line and passes it on to the function above
 void settingReader()
 {
+    printf("bla");
 	FILE *fptr3;
 	fptr3 = fopen("~/projectStalker/setupfileC.txt","r");
 
