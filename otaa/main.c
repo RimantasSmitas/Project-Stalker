@@ -57,17 +57,19 @@ static osjob_t sendjob;
 
 // provide application router ID (8 bytes, LSBF)
 void os_getArtEui (u1_t* buf) {
+    printf("DevEUI is d%",DEVEUI);
     memcpy(buf, APPEUI, 8);
 }
 
 // provide device ID (8 bytes, LSBF)
 void os_getDevEui (u1_t* buf) {
-   // printf("DevEUI is d%",DEVEUI);
+   printf("DevEUI is d%",DEVEUI);
     memcpy(buf, DEVEUI, 8);
 }
 
 // provide device key (16 bytes)
 void os_getDevKey (u1_t* buf) {
+   printf("DevEUI is d%",DEVEUI);
     memcpy(buf, DEVKEY, 16);
 }
 
