@@ -41,7 +41,7 @@
 // application router ID (LSBF)
 //static const u1_t APPEUI[8]  = { 0xDE, 0x46, 0x03, 0xD0, 0x7E, 0xD5, 0xB3, 0x70 };
 
-static u1_t APPEUI[8];
+static u1_t APPEUI[8] ;
 // unique device ID (LSBF)
 //static const u1_t DEVEUI[8]  = { 0x5D, 0x4B, 0x65, 0xE3, 0x8B, 0x31, 0xCB, 0x00 };
 static u1_t DEVEUI[8];
@@ -57,19 +57,20 @@ static osjob_t sendjob;
 
 // provide application router ID (8 bytes, LSBF)
 void os_getArtEui (u1_t* buf) {
-    printf("DevEUI is d%",DEVEUI);
+	
+    printf("DevEUI is ");
     memcpy(buf, APPEUI, 8);
 }
 
 // provide device ID (8 bytes, LSBF)
 void os_getDevEui (u1_t* buf) {
-   printf("DevEUI is d%",DEVEUI);
+   printf("DevEUI is ");
     memcpy(buf, DEVEUI, 8);
 }
 
 // provide device key (16 bytes)
 void os_getDevKey (u1_t* buf) {
-   printf("DevEUI is d%",DEVEUI);
+   printf("DevEUI is ");
     memcpy(buf, DEVKEY, 16);
 }
 
