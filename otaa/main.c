@@ -110,7 +110,7 @@ int counter;
            //     printf(" %c =",setting[i+1]);
                 long int val = getVal(setting[i])<<4 | getVal(setting[i+1]);
            //     printf("%d\n",val);
-                DEVEUI[7-counter]=val;
+  //              DEVEUI[7-counter]=val;
                 counter++;
             }
           //  printf("DEVEUI %d\n",DEVEUI);
@@ -126,7 +126,7 @@ int counter;
               //  printf(" %c =",setting[i+1]);
                 long int val = getVal(setting[i])<<4 | getVal(setting[i+1]);
                // printf("%d\n",val);
-                APPEUI[7-counter]=val;
+  //              APPEUI[7-counter]=val;
                 counter++;
             }
             //printf("APPEUI %d\n",APPEUI);
@@ -141,7 +141,7 @@ return;
                // printf(" %c =",setting[i+1]);
                 long int val = getVal(setting[i])<<4 | getVal(setting[i+1]);
                // printf("%d\n",val);
-                DEVKEY[counter]=val;
+   //             DEVKEY[counter]=val;
                 counter++;
             }
             //printf("APPKEY %d\n",DEVKEY);
