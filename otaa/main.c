@@ -155,7 +155,7 @@ void settingReader()
 {
     printf("bla");
 	FILE *fptr3;
-	fptr3 = fopen("~/projectStalker/setupfileC.txt","r");
+	fptr3 = fopen("../setupfileC.txt","r");
 
 	int count=0;
 	char line[256];
@@ -195,7 +195,7 @@ void settingReader()
 // initial job
 static void initfunc (osjob_t* j) {
     printf("printb");
-    //settingReader();
+    settingReader();
     // reset MAC state
     LMIC_reset();
     printf("DevEUI is d%",DEVEUI);
