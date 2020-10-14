@@ -195,7 +195,7 @@ void settingReader()
 // initial job
 static void initfunc (osjob_t* j) {
     printf("printb");
-    settingReader();
+    //settingReader();
     // reset MAC state
     LMIC_reset();
     printf("DevEUI is d%",DEVEUI);
