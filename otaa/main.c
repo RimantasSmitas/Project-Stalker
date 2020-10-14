@@ -39,14 +39,10 @@
 //////////////////////////////////////////////////
 
 // application router ID (LSBF)
-//static const u1_t APPEUI[8]  = { 0xDE, 0x46, 0x03, 0xD0, 0x7E, 0xD5, 0xB3, 0x70 };
-
 static u1_t APPEUI[8] ;
 // unique device ID (LSBF)
-//static const u1_t DEVEUI[8]  = { 0x5D, 0x4B, 0x65, 0xE3, 0x8B, 0x31, 0xCB, 0x00 };
 static u1_t DEVEUI[8];
 // device-specific AES key (derived from device EUI)
-//static const u1_t DEVKEY[16] = { 0x89, 0xCA, 0x26, 0x18, 0xDB, 0x51, 0xE4, 0x3B, 0xA0, 0x56, 0x5B, 0xE4, 0xCE, 0x96, 0xB7, 0x15 };
 static u1_t DEVKEY[16];
 static char mydata[32] = "05 10 10 2012 08 12 10 12";
 static osjob_t sendjob;
@@ -57,20 +53,16 @@ static osjob_t sendjob;
 
 // provide application router ID (8 bytes, LSBF)
 void os_getArtEui (u1_t* buf) {
-	
-    printf("APPEUI is d%",APPEUI);
-    memcpy(buf, APPEUI, 8);
+	memcpy(buf, APPEUI, 8);
 }
 
 // provide device ID (8 bytes, LSBF)
 void os_getDevEui (u1_t* buf) {
-   printf("DevEUI is %d ",DEVEUI);
     memcpy(buf, DEVEUI, 8);
 }
 
 // provide device key (16 bytes)
 void os_getDevKey (u1_t* buf) {
-   printf("DeVKEY is ", DEVKEY);
     memcpy(buf, DEVKEY, 16);
 }
 
@@ -102,50 +94,35 @@ int counter;
     switch(count)
     {
         case 0:
-         //   printf("line %s\n",setting);
             counter = 0;
             for (int i = 0;i<16;i=i+2)
             {
-           //     printf("%c +",setting[i]);
-           //     printf(" %c =",setting[i+1]);
                 long int val = getVal(setting[i])<<4 | getVal(setting[i+1]);
-           //     printf("%d\n",val);
                 DEVEUI[7-counter]=val;
                 counter++;
             }
-          //  printf("DEVEUI %d\n",DEVEUI);
-
+         
             return;
 
         case 1:
-          //  printf("line %s\n",setting);
             counter = 0;
             for (int i = 0;i<16;i=i+2)
             {
-            //    printf("%c +",setting[i]);
-              //  printf(" %c =",setting[i+1]);
                 long int val = getVal(setting[i])<<4 | getVal(setting[i+1]);
-               // printf("%d\n",val);
                 APPEUI[7-counter]=val;
                 counter++;
             }
-            //printf("APPEUI %d\n",APPEUI);
+         
 return;
 
         case 2:
-            //printf("line %s\n",setting);
             counter = 0;
             for (int i = 0;i<32;i=i+2)
             {
-               // printf("%c +",setting[i]);
-               // printf(" %c =",setting[i+1]);
                 long int val = getVal(setting[i])<<4 | getVal(setting[i+1]);
-               // printf("%d\n",val);
                 DEVKEY[counter]=val;
                 counter++;
             }
-            //printf("APPKEY %d\n",DEVKEY);
-            //printf("line %s\n", setting);
             return;
     }
 }
@@ -153,15 +130,12 @@ return;
 //function that reads a line and passes it on to the function above
 void settingReader()
 {
-    printf("bla");
-	FILE *fptr3;
+    FILE *fptr3;
 	fptr3 = fopen("../setupfileC.txt","r");
-
 	int count=0;
 	char line[256];
 	while (fgets(line, sizeof line, fptr3) != NULL) /* read a line */
 	{
-	//printf("line test %s\n",line);
 		switch(count)
 		{
 			case 0:
@@ -207,8 +181,6 @@ static void initfunc (osjob_t* j) {
 
 // application entry point
 int main () {
-    printf("print");
-
     osjob_t initjob;
     // initialize runtime env
     os_init();
@@ -246,8 +218,7 @@ void getData(){
 
 	if( fgets (mydata, 60, fptr1)!=NULL )
 	{
-		//printf("Reading data from data file\n");
-		//puts(data);
+
 	}
 
 	while (!feof(fptr1))
