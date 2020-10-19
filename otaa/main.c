@@ -277,15 +277,15 @@ void onEvent (ev_t ev) {
       // starting to join network
       case EV_JOINING:
           // start blinking
-          blinkfunc(&blinkjob);
+         // blinkfunc(&blinkjob);
           break;
           
       // network joined, session established
       case EV_JOINED:
           // cancel blink job
-          os_clearCallback(&blinkjob);
+          //os_clearCallback(&blinkjob);
           // switch on LED
-          debug_led(1);
+          //debug_led(1);
           // (don't schedule any new actions)
 	  do_send(&sendjob);
           break;
