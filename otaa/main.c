@@ -139,17 +139,14 @@ void settingReader()
 		switch(count)
 		{
 			case 0:
-				printf("Dev EUI %s\n",line);
-                passingSettingToParameters(0,line);
+				passingSettingToParameters(0,line);
                 break ;
 
 			case 1:
-				printf("App EUI %s\n",line);
-                passingSettingToParameters(1,line);
+				passingSettingToParameters(1,line);
                 break;
 
 			case 2:
-				printf("App key %s\n",line);
 				passingSettingToParameters(2,line);
 				break;
 
@@ -267,7 +264,8 @@ void do_send(osjob_t* j){
         LMIC_setTxData2(1, mydata, sizeof(mydata)-1, 0);
         debug_str("Packet queued\r\n");
     }
-    os_setTimedCallback(j, os_getTime()+sec2osticks(10), do_send);
+    os_setTimedCallback(j, os_getTime()+sec2osticks(300), do_send);
+    //os_setTimedCallback(j, os_getTime()+sec2osticks(10), do_send);
 }
 
 //////////////////////////////////////////////////
