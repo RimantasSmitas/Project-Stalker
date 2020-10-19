@@ -103,7 +103,7 @@ while True:
 	# resize the frame to have a maximum width of 500 pixels (the
 	# less data we have, the faster we can process it), then convert
 	# the frame from BGR to RGB for dlib
-	frame = imutils.resize(frame, width=500)
+	frame = imutils.resize(frame, width=750)
 	rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
 	# if the frame dimensions are empty, set them
@@ -182,7 +182,7 @@ while True:
 			# update the tracker and grab the updated position
 			tracker.update(rgb)
 			pos = tracker.get_position()
-#Reversed the x and y's for a dumb test
+                        #Reversed the x and y's for a dumb test
 			# unpack the position object
 			startY = int(pos.left())
 			startX = int(pos.top())
