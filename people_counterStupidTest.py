@@ -21,6 +21,14 @@ import time
 import dlib
 import cv2
 import sys
+import datetime
+
+current_time = datetime.datetime.now()
+year = current_time.year
+month = current_time.month
+day = current_time.day
+hour = current_time.hour
+minute = current_time.minute
 
 sys.path.append('/usr/local/lib/python3.7/site-packages')
 
@@ -279,6 +287,12 @@ while True:
 	# then update the FPS counter
 	totalFrames += 1
 	fps.update()
+	if fps.elapsed() > 300:
+		f = open("dataFile.txt", "a")
+
+		peeps = "{0}{1}{2}{3}{4}{5}{6}{7}\n"
+		f.write(peeps.format(year, month, day, hour, minute, totalLeft, totalRight))
+		f.close()
 
 # stop the timer and display FPS information
 fps.stop()
