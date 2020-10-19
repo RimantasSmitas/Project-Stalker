@@ -165,11 +165,9 @@ void settingReader()
 
 // initial job
 static void initfunc (osjob_t* j) {
-    printf("printb");
     settingReader();
     // reset MAC state
     LMIC_reset();
-    printf("DevEUI is d%",DEVEUI);
     // start joining
     LMIC_startJoining();
     // init done - onEvent() callback will be invoked...
