@@ -292,6 +292,9 @@ while True:
 			f = open("otaa/dataFile.txt", "a")
 			peeps = "{0}{1}{2}\n"
 			f.write(peeps.format(cameraId,totalLeft,totalRight))
+			totalLeft = 0
+			totalRight = 0
+			totalFrames = 0
 
 
 # stop the timer and display FPS information
