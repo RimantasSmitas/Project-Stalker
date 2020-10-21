@@ -195,7 +195,7 @@ void getData(){
 
 	char str[256];
 	char temp[]="temp.txt";
-	fptr1 = fopen("../dataFile.txt","r+");
+	fptr1 = fopen("dataFile.txt","r+");
 	//char stupid ;
 	//for (int i = 0;sizeof(mydata)-1; i++)
 	//{
