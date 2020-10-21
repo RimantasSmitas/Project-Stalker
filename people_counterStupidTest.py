@@ -94,7 +94,7 @@ trackableObjects = {}
 totalFrames = 0
 totalLeft = 0
 totalRight = 0
-
+frameRate = 20
 # start the frames per second throughput estimator
 fps = FPS().start()
 
@@ -304,7 +304,7 @@ while True:
 	#print(time)
 	#the second multiplicator is the frame rate that is used
 	if(totalRight == 0 or totalLeft == 0):
-		if(totalFrames > 300*20):
+		if(totalFrames > 300*frameRate):
 			current_time = datetime.datetime.now()
 			cameraID = 1
 			year = current_time.year
