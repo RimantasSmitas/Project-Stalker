@@ -139,17 +139,14 @@ void settingReader()
 		switch(count)
 		{
 			case 0:
-				printf("Dev EUI %s\n",line);
-                passingSettingToParameters(0,line);
+				passingSettingToParameters(0,line);
                 break ;
 
 			case 1:
-				printf("App EUI %s\n",line);
-                passingSettingToParameters(1,line);
+				passingSettingToParameters(1,line);
                 break;
 
 			case 2:
-				printf("App key %s\n",line);
 				passingSettingToParameters(2,line);
 				break;
 
@@ -168,11 +165,9 @@ void settingReader()
 
 // initial job
 static void initfunc (osjob_t* j) {
-    printf("printb");
     settingReader();
     // reset MAC state
     LMIC_reset();
-    printf("DevEUI is d%",DEVEUI);
     // start joining
     LMIC_startJoining();
     // init done - onEvent() callback will be invoked...
@@ -267,7 +262,8 @@ void do_send(osjob_t* j){
         LMIC_setTxData2(1, mydata, sizeof(mydata)-1, 0);
         debug_str("Packet queued\r\n");
     }
-    os_setTimedCallback(j, os_getTime()+sec2osticks(10), do_send);
+    os_setTimedCallback(j, os_getTime()+sec2osticks(20), do_send);
+    //os_setTimedCallback(j, os_getTime()+sec2osticks(10), do_send);
 }
 
 //////////////////////////////////////////////////
@@ -281,15 +277,15 @@ void onEvent (ev_t ev) {
       // starting to join network
       case EV_JOINING:
           // start blinking
-          blinkfunc(&blinkjob);
+         // blinkfunc(&blinkjob);
           break;
           
       // network joined, session established
       case EV_JOINED:
           // cancel blink job
-          os_clearCallback(&blinkjob);
+          //os_clearCallback(&blinkjob);
           // switch on LED
-          debug_led(1);
+          //debug_led(1);
           // (don't schedule any new actions)
 	  do_send(&sendjob);
           break;

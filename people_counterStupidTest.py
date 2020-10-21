@@ -22,6 +22,16 @@ import dlib
 import cv2
 import sys
 import datetime
+#<<<<<<< HEAD
+#=======
+
+current_time = datetime.datetime.now()
+year = current_time.year
+month = current_time.month
+day = current_time.day
+hour = current_time.hour
+minute = current_time.minute
+#>>>>>>> e1c360dc248bf482b585a51f56e5547b1f4aafc9
 
 sys.path.append('/usr/local/lib/python3.7/site-packages')
 
@@ -104,7 +114,7 @@ while True:
 	# resize the frame to have a maximum width of 500 pixels (the
 	# less data we have, the faster we can process it), then convert
 	# the frame from BGR to RGB for dlib
-	frame = imutils.resize(frame, width=750)
+	#frame = imutils.resize(frame, width=750)
 	rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
 	# if the frame dimensions are empty, set them
@@ -280,6 +290,12 @@ while True:
 	# then update the FPS counter
 	totalFrames += 1
 	fps.update()
+	if totalFrames > (30*10):
+		f = open("dataFile.txt", "a")
+
+		peeps = "{0}{1}{2}{3}{4}{5}{6}{7}\n"
+		f.write(peeps.format(year, month, day, hour, minute, totalLeft, totalRight))
+		f.close()
 
 	######################################################################
 	# code to write to file

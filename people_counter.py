@@ -286,17 +286,17 @@ while True:
     ######################################################################
     # code to write to file 
     ######################################################################
-    if fps.elapsed()> 300:
-        current_time = datetime.datetime.now()
-        cameraID = 1
-        year = current_time.year
-        month = current_time.month
-        day = current_time.day
-        hour = current_time.hour
-        minute = current_time.minute
-        f = open("dataFile.txt","a")
-        peeps = "{0}{1}{2}{3}{4}{5}{6}{7}{8}\n"
-        f.write(peeps.format(cameraID,totalUp,totalDown,year,month,day,hour,minute))
+	if totalFrames> 50:
+		current_time = datetime.datetime.now()
+		cameraID = 1
+		year = current_time.year
+		month = current_time.month
+		day = current_time.day
+		hour = current_time.hour
+		minute = current_time.minute
+		#f = open("dataFile.txt","a")
+		peeps = "{0}{1}{2}{3}{4}{5}{6}{7}{8}\n"
+		#f.write(peeps.format(cameraID,totalUp,totalDown,year,month,day,hour,minute))
 
     
 
