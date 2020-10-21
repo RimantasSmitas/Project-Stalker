@@ -44,7 +44,7 @@ static u1_t APPEUI[8] ;
 static u1_t DEVEUI[8];
 // device-specific AES key (derived from device EUI)
 static u1_t DEVKEY[16];
-static char mydata[32] = "05 10 10 2012 08 12 10 12";
+char mydata[32] = "";
 static osjob_t sendjob;
 
 //////////////////////////////////////////////////
@@ -201,6 +201,11 @@ void getData(){
 	char str[256];
 	char temp[]="temp.txt";
 	fptr1 = fopen("../dataFile.txt","r+");
+	//char stupid ;
+	//for (int i = 0;sizeof(mydata)-1; i++)
+	//{
+	// mydata[i]=stupid;
+	//}
 
 	if(!fptr1)
 	{
@@ -218,7 +223,7 @@ void getData(){
 
 	if( fgets (mydata, 60, fptr1)!=NULL )
 	{
-
+	printf(mydata);
 	}
 
 	while (!feof(fptr1))
