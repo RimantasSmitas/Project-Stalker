@@ -21,17 +21,8 @@ import time
 import dlib
 import cv2
 import sys
-import datetime
-#<<<<<<< HEAD
-#=======
 
-current_time = datetime.datetime.now()
-year = current_time.year
-month = current_time.month
-day = current_time.day
-hour = current_time.hour
-minute = current_time.minute
-#>>>>>>> e1c360dc248bf482b585a51f56e5547b1f4aafc9
+cameraId = 1;
 
 sys.path.append('/usr/local/lib/python3.7/site-packages')
 
@@ -94,9 +85,9 @@ trackableObjects = {}
 totalFrames = 0
 totalLeft = 0
 totalRight = 0
-frameRate = 20
+frameRate = 10
 # start the frames per second throughput estimator
-fps = FPS().start()
+#fps = FPS().start()
 
 
 # loop over frames from the video stream
@@ -161,7 +152,7 @@ while True:
 				idx = int(detections[0, 0, i, 1])
 
 				# if the class label is not a person, ignore it
-				if CLASSES[idx] != "person":
+				if CLASSES[idx] != "person" or "":
 					continue
 
 				# compute the (x, y)-coordinates of the bounding box
@@ -289,39 +280,24 @@ while True:
 	# increment the total number of frames processed thus far and
 	# then update the FPS counter
 	totalFrames += 1
-	fps.update()
-	if totalFrames > (30*10):
-		f = open("dataFile.txt", "a")
-
-		peeps = "{0}{1}{2}{3}{4}{5}{6}{7}\n"
-		f.write(peeps.format(year, month, day, hour, minute, totalLeft, totalRight))
-		f.close()
-
+#	fps.update()
 	######################################################################
 	# code to write to file
 	######################################################################
 	#time = fps.fps()
 	#print(time)
 	#the second multiplicator is the frame rate that is used
-	if(totalRight == 0 or totalLeft == 0):
-		if(totalFrames > 300*frameRate):
-			current_time = datetime.datetime.now()
-			cameraID = 1
-			year = current_time.year
-			month = current_time.month
-			day = current_time.day
-			hour = current_time.hour
-			minute = current_time.minute
+	if(totalRight > 0 or totalLeft > 0):
+		if(totalFrames > 60*frameRate):
 			f = open("dataFile.txt","a")
-			peeps = "{0}{1}{2}{3}{4}{5}{6}{7}{8}\n"
-			f.write(peeps.format(cameraID,totalUp,totalDown,year,month,day,hour,min))
-
+			peeps = "{0}{1}{2}\n"
+			f.write(peeps.format(cameraId,totalLeft,totalRight))
 
 
 # stop the timer and display FPS information
-fps.stop()
-print("[INFO] elapsed time: {:.2f}".format(fps.elapsed()))
-print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
+#fps.stop()
+#print("[INFO] elapsed time: {:.2f}".format(fps.elapsed()))
+#print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
 
 # check to see if we need to release the video writer pointer
 if writer is not None:
