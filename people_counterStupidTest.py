@@ -289,7 +289,7 @@ while True:
 	#the second multiplicator is the frame rate that is used
 	if(totalRight > 0 or totalLeft > 0):
 		if(totalFrames > 60*frameRate):
-			f = open("dataFile.txt","a")
+			f = open("otaa/dataFile.txt", "a")
 			peeps = "{0}{1}{2}\n"
 			f.write(peeps.format(cameraId,totalLeft,totalRight))
 
