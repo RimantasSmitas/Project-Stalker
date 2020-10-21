@@ -1,0 +1,47 @@
+############################################################################
+#####My eddits to reduce power use #########################################
+############################################################################
+##turn off mainboard LEDs
+dtoverlay=act-led
+
+#disable ACT LED
+
+dtparam=act_led_trigger=none
+
+dtparam=act_led_activelow=off
+
+#disable PWR LED
+
+dtparam=pwr_led_trigger=none
+
+tparam=pwr_led_activelow=off
+
+#turn off ethernet port LEDs
+
+dtparam=eth_led0=4
+
+dtparam=eth_led1=4
+
+#turn off bluetooth
+
+dtoverlay=disable-bt
+
+#disable hdmi
+
+sudo /opt/vc/bin/tvservice -o
+
+#disable usb chip
+
+echo '1-1' |sudo tee /sys/bus/usb/drivers/usb/unbind
+
+#disable ethernet
+
+sudo ifconfig eth0 down
+
+#disable audio
+
+dtparam=audio=off
+
+
+
+

@@ -290,7 +290,7 @@ while True:
 	if(totalRight > 0 or totalLeft > 0):
 		if(totalFrames > 60*frameRate):
 			f = open("otaa/dataFile.txt", "a")
-			peeps = "{0}{1}{2}\n"
+			peeps = "{0} {1} {2}\n"
 			f.write(peeps.format(cameraId,totalLeft,totalRight))
 			totalLeft = 0
 			totalRight = 0
