@@ -200,7 +200,7 @@ void getData(){
 
 	char str[256];
 	char temp[]="temp.txt";
-	fptr1 = fopen("dataFile.txt","r+");
+	fptr1 = fopen("../dataFile.txt","r+");
 
 	if(!fptr1)
 	{
@@ -262,7 +262,7 @@ void do_send(osjob_t* j){
     if (LMIC.opmode & OP_TXRXPEND) {
         debug_str("OP_TXRXPEND, not sending\r\n");
     } else {
-		//getData();
+	getData();
         // Prepare upstream data transmission at the next possible time.
         LMIC_setTxData2(1, mydata, sizeof(mydata)-1, 0);
         debug_str("Packet queued\r\n");
