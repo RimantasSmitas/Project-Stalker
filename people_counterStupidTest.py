@@ -287,14 +287,14 @@ while True:
 	#time = fps.fps()
 	#print(time)
 	#the second multiplicator is the frame rate that is used
-	if(totalRight > 0 or totalLeft > 0):
-		if(totalFrames > 60*frameRate):
-			f = open("otaa/dataFile.txt", "a")
-			peeps = "{0} {1} {2}\n"
-			f.write(peeps.format(cameraId,totalLeft,totalRight))
-			totalLeft = 0
-			totalRight = 0
-			totalFrames = 0
+#	if(totalRight > 0 or totalLeft > 0):
+#		if(totalFrames > 60*frameRate):
+#			f = open("/otaa/dataFile.txt", "a")
+#			peeps = "{0} {1} {2}\n"
+#			f.write(peeps.format(cameraId,totalLeft,totalRight))
+#			totalLeft = 0
+#			totalRight = 0
+#			totalFrames = 0
 
 
 # stop the timer and display FPS information
