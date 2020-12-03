@@ -197,7 +197,7 @@ while True:
 	# moving 'up' or 'down'
 
 	# changed the line coordinates to a vertical line
-	cv2.line(frame, (W // 2, 0), (W // 2, H), (0, 255, 255), 2)
+	#cv2.line(frame, (W // 2, 0), (W // 2, H), (0, 255, 255), 2)
 
 	# use the centroid tracker to associate the (1) old object
 	# centroids with (2) the newly computed object centroids
